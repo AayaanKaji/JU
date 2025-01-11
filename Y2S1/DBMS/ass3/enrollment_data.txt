@@ -1,0 +1,154 @@
+-- Student 1
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (1, '01', '0001');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (1, '01', '0101');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (1, '01', '0102'); 
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (1, '01', '0104');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (1, '01', '0106');
+
+-- Student 2
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (2, '02', '0001');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (2, '02', '0201');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (2, '02', '0202');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (2, '02', '0203');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (2, '02', '0204');
+
+-- Student 3
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (3, '03', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (3, '03', '0301');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (3, '03', '0302');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (3, '03', '0303');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (3, '03', '0304');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (3, '03', '0305');
+
+-- Student 4
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (4, '04', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (4, '04', '0401');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (4, '04', '0402');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (4, '04', '0403');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (4, '04', '0404');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (4, '04', '0405');
+
+-- Student 5
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (5, '05', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (5, '05', '0501');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (5, '05', '0502');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (5, '05', '0503');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (5, '05', '0504');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (5, '05', '0505');
+
+-- Student 6
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (6, '06', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (6, '06', '0601');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (6, '06', '0602');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (6, '06', '0603');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (6, '06', '0604');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (6, '06', '1001');
+
+-- Student 7
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (7, '07', '0003');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (7, '07', '0701');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (7, '07', '0702');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (7, '07', '0704');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (7, '07', '0705');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (7, '07', '0706');
+
+-- Student 8
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (8, '08', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (8, '08', '0801');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (8, '08', '0802');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (8, '08', '0803');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (8, '08', '0804');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (8, '08', '0805');
+
+-- Student 9
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (9, '02', '0001');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (9, '02', '0201');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (9, '02', '0202');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (9, '02', '0204');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (9, '02', '0205');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (9, '02', '0106');
+
+
+-- Student 10
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (10, '10', '0003');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (10, '10', '1001');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (10, '10', '1002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (10, '10', '1003');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (10, '10', '1004');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (10, '10', '1005');
+
+-- Student 11
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (11, '11', '0003');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (11, '11', '1101');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (11, '11', '1102');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (11, '11', '1103');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (11, '11', '1104');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (11, '11', '1105');
+
+-- Student 12
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (12, '01', '0001');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (12, '01', '0101');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (12, '01', '0102');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (12, '01', '0103');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (12, '01', '0104');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (12, '01', '0106');
+
+-- Student 13
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (13, '01', '0001');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (13, '01', '0101');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (13, '01', '0102'); 
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (13, '01', '0104');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (13, '01', '0105');
+
+-- Student 14
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (14, '02', '0001');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (14, '02', '0201');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (14, '02', '0202');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (14, '02', '0203');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (14, '02', '0204');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (14, '02', '0205');
+
+-- Student 15
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (15, '03', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (15, '03', '0301');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (15, '03', '0302');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (15, '03', '0303');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (15, '03', '0304');
+
+-- Student 16
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (16, '04', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (16, '04', '0401');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (16, '04', '0402');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (16, '04', '0403');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (16, '04', '0404');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (16, '04', '0405');
+
+-- Student 17
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (17, '05', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (17, '05', '0501');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (17, '05', '0502');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (17, '05', '0503');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (17, '05', '0504');
+
+-- Student 18
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (18, '06', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (18, '06', '0601');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (18, '06', '0602');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (18, '06', '0603');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (18, '06', '0605');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (18, '06', '1001');
+
+-- Student 19
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (19, '07', '0003');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (19, '07', '0701');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (19, '07', '0702');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (19, '07', '0703');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (19, '07', '0706');
+
+-- Student 20
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (20, '08', '0002');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (20, '08', '0801');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (20, '08', '0802');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (20, '08', '0803');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (20, '08', '0804');
+INSERT INTO enrollment (student_id, course_code, subject_code) VALUES (20, '08', '0805');

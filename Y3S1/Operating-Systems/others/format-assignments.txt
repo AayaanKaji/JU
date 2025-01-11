@@ -1,0 +1,35 @@
+
+/***********************************************************************
+ *
+ * Put Name, Roll, Team No, Date.
+ *
+ * Put Assignment Details, Input Description, Output Description.
+ *
+ *
+ * Put the compilation command.
+ * Put the execution sequence.
+ *
+ *
+ * Put Sample Input and Output generated
+ *
+ ***********************************************************************/
+
+Example:
+
+
+#!/bin/bash
+#
+# Lots of Comments (Team info, Assignment info etc.)
+# .....
+# .....
+
+# Q1. < Describe the Question >
+# < Answer for Q1 >
+# < Output for Q1>
+
+# Q2. < Describe the Question >
+# < Answer for Q2 >
+# < Output for Q2>
+
+# ........
+# ........

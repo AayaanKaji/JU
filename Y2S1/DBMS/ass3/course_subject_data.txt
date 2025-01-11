@@ -1,0 +1,98 @@
+-- Insert subjects for Course 1
+INSERT INTO course_subject (course_code, subject_code) VALUES ('01', '0001');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('01', '0101');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('01', '0102');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('01', '0103');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('01', '0104');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('01', '0105');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('01', '0106');
+
+-- Insert subjects for Course 2
+INSERT INTO course_subject (course_code, subject_code) VALUES ('02', '0001');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('02', '0201');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('02', '0202');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('02', '0203');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('02', '0204');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('02', '0205');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('02', '0106');
+
+-- Insert subjects for Course 3
+INSERT INTO course_subject (course_code, subject_code) VALUES ('03', '0002');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('03', '0301');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('03', '0302');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('03', '0303');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('03', '0304');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('03', '0305');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('03', '0401');
+
+-- Insert subjects for Course 4
+INSERT INTO course_subject (course_code, subject_code) VALUES ('04', '0002');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('04', '0401');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('04', '0402');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('04', '0403');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('04', '0404');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('04', '0405');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('04', '0406');
+
+-- Insert subjects for Course 5
+INSERT INTO course_subject (course_code, subject_code) VALUES ('05', '0002');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('05', '0501');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('05', '0502');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('05', '0503');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('05', '0504');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('05', '0505');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('05', '0506');
+
+-- Insert subjects for Course 6
+INSERT INTO course_subject (course_code, subject_code) VALUES ('06', '0002');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('06', '0601');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('06', '0602');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('06', '0603');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('06', '0604');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('06', '0605');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('06', '1001');
+
+-- Insert subjects for Course 7
+INSERT INTO course_subject (course_code, subject_code) VALUES ('07', '0003');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('07', '0701');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('07', '0702');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('07', '0703');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('07', '0704');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('07', '0705');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('07', '0706');
+
+-- Insert subjects for Course 8
+INSERT INTO course_subject (course_code, subject_code) VALUES ('08', '0002');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('08', '0801');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('08', '0802');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('08', '0803');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('08', '0804');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('08', '0805');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('08', '0806');
+
+-- Insert subjects for Course 9
+INSERT INTO course_subject (course_code, subject_code) VALUES ('09', '0003');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('09', '0901');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('09', '0902');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('09', '0903');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('09', '0904');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('09', '0905');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('09', '0906');
+
+-- Insert subjects for Course 10
+INSERT INTO course_subject (course_code, subject_code) VALUES ('10', '0003');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('10', '1001');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('10', '1002');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('10', '1003');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('10', '1004');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('10', '1005');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('10', '1006');
+
+-- Insert subjects for Course 11
+INSERT INTO course_subject (course_code, subject_code) VALUES ('11', '0003');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('11', '1101');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('11', '1102');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('11', '1103');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('11', '1104');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('11', '1105');
+INSERT INTO course_subject (course_code, subject_code) VALUES ('11', '1106');

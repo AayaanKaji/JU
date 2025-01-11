@@ -1,0 +1,60 @@
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('John Doe', TO_DATE('1995-03-15', 'YYYY-MM-DD'), '9434567890', '123 Main St', 'New York', '10001', 'NY', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Jane Smith', TO_DATE('1998-08-20', 'YYYY-MM-DD'), '9876543210', '456 Elm St', 'Los Angeles', '90001', 'CA', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Michael Johnson', TO_DATE('1997-05-10', 'YYYY-MM-DD'), '5551234567', '789 Oak St', 'Chicago', '60601', 'IL', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Sarah Wilson', TO_DATE('1999-12-02', 'YYYY-MM-DD'), '4449876543', '321 Pine St', 'Houston', '77001', 'TX', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('David Brown', TO_DATE('1996-11-25', 'YYYY-MM-DD'), '7773334444', '567 Cedar St', 'San Francisco', '94101', 'CA', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Emily Davis', TO_DATE('2000-02-12', 'YYYY-MM-DD'), '1234567890', '222 Oak St', 'Boston', '02101', 'MA', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('William Miller', TO_DATE('1994-09-30', 'YYYY-MM-DD'), '9876543210', '789 Elm St', 'Seattle', '98101', 'WA', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Olivia Wilson', TO_DATE('1997-07-22', 'YYYY-MM-DD'), '5551234567', '456 Maple St', 'Miami', '33101', 'FL', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('James Smith', TO_DATE('1998-04-05', 'YYYY-MM-DD'), '4449876543', '654 Birch St', 'Denver', '80201', 'CO', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Ava Johnson', TO_DATE('1996-01-18', 'YYYY-MM-DD'), '7773334444', '987 Pine St', 'Dallas', '75201', 'TX', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Emma Brown', TO_DATE('1999-10-07', 'YYYY-MM-DD'), '1234567890', '789 Cedar St', 'San Diego', '92101', 'CA', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Noah Davis', TO_DATE('1995-06-29', 'YYYY-MM-DD'), '9876543210', '123 Elm St', 'Philadelphia', '19101', 'PA', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Sophia Wilson', TO_DATE('1998-03-14', 'YYYY-MM-DD'), '5551234567', '234 Maple St', 'Phoenix', '85001', 'AZ', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Liam Smith', TO_DATE('1997-09-17', 'YYYY-MM-DD'), '4449876543', '567 Oak St', 'Austin', '73301', 'TX', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Mia Johnson', TO_DATE('1996-12-24', 'YYYY-MM-DD'), '7773334444', '876 Pine St', 'Nashville', '37201', 'TN', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Charlotte Brown', TO_DATE('1995-04-03', 'YYYY-MM-DD'), '1234567890', '123 Birch St', 'Portland', '97201', 'OR', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Emma Johnson', TO_DATE('1998-06-15', 'YYYY-MM-DD'), '5559876543', '123 Elm Street', 'Cityville', '12345', 'CA', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Noah Brown', TO_DATE('2001-09-05', 'YYYY-MM-DD'), '5553334444', '567 Pine Lane', 'Hamletville', '98765', 'FL', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Olivia Smith', TO_DATE('2000-11-10', 'YYYY-MM-DD'), '5557778888', '789 Maple Road', 'Villagetown', '34567', 'NY', 'USA');
+
+INSERT INTO students (name, dob, phone_number, locality, city, PIN, state, country)
+VALUES ('Liam Wilson', TO_DATE('1999-03-22', 'YYYY-MM-DD'), '5555555555', '456 Oak Avenue', 'Townsville', '56789', 'TX', 'USA');
+

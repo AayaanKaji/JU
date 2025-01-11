@@ -1,0 +1,11 @@
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('01', 'Computer Science', 60);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('02', 'Information Technology', 60);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('03', 'Electronics & Telecommunication Engineering', 60);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('04', 'Electrical Engineering', 80);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('05', 'Mechanical Engineering', 70);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('06', 'Civil Engineering', 70);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('07', 'Chemical Engineering', 40);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('08', 'Aerospace Engineering', 35);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('09', 'Biomedical Engineering', 30);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('10', 'Environmental Engineering', 25);
+INSERT INTO courses (ccode, cname, intake_capacity) VALUES ('11', 'Materials Science and Engineering', 40);

@@ -1,0 +1,21 @@
+-- Insert grade data
+INSERT INTO grade_scale (grade, low_range, high_range)
+VALUES ('S', 90, 100);
+
+INSERT INTO grade_scale (grade, low_range, high_range)
+VALUES ('A', 80, 89);
+
+INSERT INTO grade_scale (grade, low_range, high_range)
+VALUES ('B', 70, 79);
+
+INSERT INTO grade_scale (grade, low_range, high_range)
+VALUES ('C', 60, 69);
+
+INSERT INTO grade_scale (grade, low_range, high_range)
+VALUES ('D', 50, 59);
+
+INSERT INTO grade_scale (grade, low_range, high_range)
+VALUES ('E', 40, 49);
+
+INSERT INTO grade_scale (grade, low_range, high_range)
+VALUES ('F', 0, 39);

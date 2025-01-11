@@ -1,0 +1,16 @@
+ASSIGNMENT – 5-A1
+Total Marks - 10 [CO4]
+Creating DEADLOCK using Thread Programming
+
+
+
+The objective of this assignment is to create a deadlock. For this purpose define two global variables (Total_1 and Total_2) and initialize both of them to 1000. You should also have two mutexes to protect these two global variables. You need to create two threads also. 
+
+The function of each of the threads is to generate a random quantity (not more than 50) and subtract that quantity from one of the Total and add that quantity to the other Total. While manipulating the Totals, each Thread should lock both the mutex and then unlock it after changing the Totals. 
+
+The order of locking and unlocking the Mutex is very important, because that’s what creates a Deadlock. Once you correctly identify this order, you should upload the program. Also, include that information (as comment in your source file) how to avoid this kind of Deadlock.
+
+If these two Threads, Two Totals and Two Mutex are not good enough for Deadlock;
+Then you need to create one more Thread, one more Total and and one more Mutex; and carry on the same experiment.
+
+Make sure there are enough printf in your program so that it can be clearly understood that there is a Deadlock. One way to ensure enough printf is to display the total of Total_1 and Total_2 all the time after every operation on it.

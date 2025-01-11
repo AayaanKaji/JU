@@ -1,0 +1,22 @@
+ASSIGNMENT – 3
+ (SOCKET Programming)
+
+
+
+
+
+IPC using SOCKET							(10 Marks) [CO5]
+
+Create two processes.
+Transfer 1GB file from parent to child using a Socket.
+Now, transfer the same file from child to parent using the same Socket. 
+
+Now, the parent process should compare the two files to make sure that the same file has returned back. 
+
+Also, print the time required to do this double transfer. 
+Attach this output to the source file as a comment.
+
+Please note that, you can see the socket which your program creates. 
+There are also various bash shell commands available to see the sockets created by the program. 
+So, once your program creates the socket, make sure you use proper command to see the socket info and paste that output as a comment in your source file.
+

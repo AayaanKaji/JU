@@ -1,0 +1,26 @@
+ASSIGNMENT – 8 (10 Marks) [CO1]
+ (Shell Script Programming)
+
+Create a directory ‘All My Cprogs Files’ in your home directory. 
+
+Move all the C files to the new creating directory.
+
+Show the list of files in your current directory.
+
+Show Current working directory.
+
+Display date in the dd:mm:yy format
+
+Count the number of files in your home directory
+
+Create a file that lists all of the .C files in your directory.  
+
+Write a script for addition of two numbers for real numbers also.
+
+Write a script to convert string lower to upper and upper to lower from a file.
+
+Read ‘n’ and generate a pattern given below.
+1
+1 2
+1 2 3
+1 2 3 4
