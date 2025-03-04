@@ -1,0 +1,19 @@
+Method 1:
+Visit the URL        http://172.16.4.234:8080/sqlclient1
+Create a new source. Provide necessary information. Sample information for be2001 is given below:
+
+Source: be2001@172.16.4.234
+JDBC Url: jdbc:mysql://172.16.4.234:3306/test
+Driver Name: Select MySQL Driver
+User: be2001
+
+A source will appear under "Sources" tab in the "Sources, Drivers, Active Connections" window. Double click the source. Provide password. If everything is fine, a connection will be established. You will then have a GUI based environment to work with the MySQL database.
+
+
+Method 2:
+Use following command in the command prompt:
+
+mysql -u <username> -h 172.16.4.234 -p
+
+It will ask for the password. Provide your password. The MySQL command prompt will appear.
+

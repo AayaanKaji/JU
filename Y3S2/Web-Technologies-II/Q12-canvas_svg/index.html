@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Class</title>
+    <style>
+        .container1, .container2 { height: 300px; width: 300px; margin: 20px auto; text-align: center; }
+        #myCanvas, #mySVG { border:2px solid #000000; }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <canvas id="myCanvas" width="200" height="200">
+        </canvas>
+        <h2>My Canvas</h2>
+    </div>
+
+    <div class="container2">
+        <svg id="mySVG" width="200" height="200">
+            <ellipse cx="100" cy="100" rx="60" ry="20" fill="none" stroke="#2600ff" 
+                stroke-width="0.6" transform="rotate(0, 100, 100)"/>
+            <ellipse cx="100" cy="100" rx="60" ry="20" fill="none" stroke="#2600ff" 
+                stroke-width="0.6" transform="rotate(120, 100, 100)"/>
+            <ellipse cx="100" cy="100" rx="60" ry="20" fill="none" stroke="#2600ff" 
+                stroke-width="0.6" transform="rotate(240, 100, 100)"/>
+        </svg>
+        <h2>My SVG</h2>
+    </div>
+
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        let radX = 60;
+        let radY = 20;
+
+        for (let i=0; i<3; i++) {
+            ctx.beginPath();
+            ctx.ellipse(100, 100, 60, 20, (Math.PI / 3) * i, 0, 2 * Math.PI);
+            ctx.strokeStyle = "#2600ff";
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+        }
+    </script>
+</body>
+</html>
