@@ -1,0 +1,28 @@
+finish (fin): Continue running until just after function in the selected stack frame returns. 
+
+continue (c): continues the execution of program that is currently being debugged till it ends, crashes, runs into a breakpoint
+            
+            c [num]: continue without stopping 'num' number of times
+
+run (r): kills current program (if any) and starts a new instance of it
+
+break (b): breakpoint is like a stop sign in your code, whenever gdb gets to a breakpoint it halts execution of your program and allows you to examine it.
+            "(gdb) break [filename]:[linenumber]"
+            (gdb) break main.cpp:42
+
+            Working with breakpoints-
+                To list current breakpoints: "info break"
+                To delete a breakpoint: "del [breakpointnumber]"
+                To temporarily disable a breakpoint: "dis [breakpointnumber]"
+                To enable a breakpoint: "en [breakpointnumber]"
+                To ignore a breakpoint until it has been crossed x times:"ignore [breakpointnumber] [x]" 
+
+step (s): Once your program has stopped, you can move through your code one step at a time, or execute multiple lines at once.
+            To execute one line of code, type "step" or "s".
+            If the line to be executed is a function call, gdb will step into that function and start executing its code one line at a time.
+
+next (n): If you want to execute the entire function with one keypress. This is equivalent to the "step over" command of most debuggers.
+
+list (l): To view the source code, type "list" or "l". gdb will print out the source code for the lines around the current line to be executed.
+            To view other lines, just type "list [linenumber]", and gdb will print out the 20 or so lines around that line.
+            gdb remembers what lines you have seen, so if you type "list" again it will print out the next bunch of lines. 

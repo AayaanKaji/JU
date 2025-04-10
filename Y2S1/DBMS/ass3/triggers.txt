@@ -1,0 +1,112 @@
+-- Check if the student has reached the enrollment limit
+CREATE OR REPLACE TRIGGER enrollment_limit
+BEFORE INSERT OR UPDATE ON enrollment
+FOR EACH ROW
+DECLARE
+    enrollment_count NUMBER;
+BEGIN
+    SELECT COUNT(*)
+    INTO enrollment_count
+    FROM enrollment
+    WHERE student_id = :NEW.student_id;
+
+    IF enrollment_count >= 6 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Student has reached the maximum enrollment limit (6 courses).');
+    END IF;
+END;
+/
+
+CREATE OR REPLACE TRIGGER subject_count_check
+AFTER INSERT ON enrollment
+FOR EACH ROW
+DECLARE
+    subject_count NUMBER;
+BEGIN
+    SELECT COUNT(*)
+    INTO subject_count
+    FROM enrollment
+    WHERE student_id = :NEW.student_id;
+
+    IF subject_count < 5 THEN
+        RAISE_APPLICATION_ERROR(-20002, 'The subject count has fallen below 5.');
+    END IF;
+END;
+/
+
+CREATE OR REPLACE TRIGGER max_subjects_per_course
+BEFORE INSERT OR UPDATE ON course_subject
+FOR EACH ROW
+DECLARE
+    subject_count NUMBER;
+BEGIN
+    SELECT COUNT(*)
+    INTO subject_count
+    FROM course_subject
+    WHERE course_code = :NEW.course_code;
+
+    IF subject_count >= 7 THEN
+        RAISE_APPLICATION_ERROR(-20003, 'Course ' || :NEW.course_code || ' already has the maximum of 7 associated subjects.');
+    END IF;
+END;
+/
+
+
+CREATE OR REPLACE TRIGGER generate_grade
+BEFORE INSERT OR UPDATE ON grade_card
+FOR EACH ROW
+DECLARE
+    v_grade VARCHAR2(1);
+BEGIN
+    SELECT grade
+    INTO v_grade
+    FROM grade_scale
+    WHERE :NEW.score BETWEEN low_range AND high_range;
+
+    :NEW.grade := v_grade;
+END;
+/
+
+
+CREATE TABLE grade_card
+(
+    enrollment_code VARCHAR2(48) PRIMARY KEY,
+    score INT CHECK (score >= 0 AND score <= 100),
+    grade VARCHAR2(1),
+    FOREIGN KEY (enrollment_code) REFERENCES enrollment(ecode) ON DELETE CASCADE
+);
+
+-- Create a trigger to calculate and set the grade automatically
+CREATE OR REPLACE TRIGGER calculate_grade
+BEFORE INSERT OR UPDATE ON grade_card
+FOR EACH ROW
+DECLARE
+    v_grade VARCHAR2(1);
+BEGIN
+    -- Calculate the grade based on the score and grade scale
+    IF :NEW.score >= 90 THEN
+        v_grade := 'S';
+    ELSIF :NEW.score >= 80 THEN
+        v_grade := 'A';
+    ELSIF :NEW.score >= 70 THEN
+        v_grade := 'B';
+    ELSIF :NEW.score >= 60 THEN
+        v_grade := 'C';
+    ELSIF :NEW.score >= 50 THEN
+        v_grade := 'D';
+    ELSIF :NEW.score >= 40 THEN
+        v_grade := 'E';
+    ELSE
+        v_grade := 'F';
+    END IF;
+
+    -- Set the calculated grade in the NEW row
+    :NEW.grade := v_grade;
+END;
+/
+
+
+
+
+
+
+

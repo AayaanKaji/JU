@@ -1,0 +1,8 @@
+1. Reading any binary string
+  a. count no. of 0's & 1's
+  b. check wheather the counts are equal
+  c. check if the counts are even
+2. Reading any character string
+  a. count no. of a's & b's
+  b. check wheather the counts are equal
+  c. check if the counts are even

@@ -1,0 +1,8 @@
+Assignment 5: GIF Image
+Create an animation of GIF image using python.
+
+Submit:
+1. Upload the original .ipynb format (do not share links or colab file directly from your account)
+2. Upload the Input images
+3. Upload the output image in .gif format
+4. A document with proper explanation on the process

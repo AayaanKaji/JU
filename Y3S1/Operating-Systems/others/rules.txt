@@ -1,0 +1,35 @@
+Assignment for 3rd Year 1stSemester Students
+IT/PC/B/S/313
+
+
+GUIDELINES
+
+Try to write a clean program with enough comments.
+
+At the beginning of the file, use block comments to write details about name, roll no, assignment details, input required and output generated.
+
+Also put the compilation [should be WARNING free] and execution sequence under the block comment.
+
+The name of the file should be as per the following format.
+
+<Two Digit Team Number>_<Assignment Number>.sh
+
+
+The type of the file should be pure plain ASCII Text.
+
+The assignment files should be uploaded AS PER THE LAB SCHEDULE. Upload only required no of files. NOT A BIT MORE.
+
+While coding, always use indentation of 4 spaces.
+
+Blocks of code should be separated by a newline.
+
+Always use command line argument handling to take inputs.
+
+Duplicate assignments will incur penalties. [Marks will be allocated proportionally]
+
+Not adhering to any of these guidelines will incur penalties.
+
+For the description of any system/library call use man command.
+
+Always use the ‘perror’ routine to check the return status of the system/library call.
+

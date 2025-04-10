@@ -1,0 +1,16 @@
+How to perform two tasks by two threads?
+How to perform multithreading by anonymous class?
+What is the Thread Scheduler and what is the difference between preemptive scheduling and time slicing?
+What happens if we start a thread twice?
+What happens if we call the run() method instead of start() method?
+What is the purpose of join method?
+Why JVM terminates the daemon thread if no user threads are remaining?
+What is the shutdown hook?
+What is garbage collection?
+What is the purpose of finalize() method?
+What does the gc() method?
+What is synchronization and why use synchronization?
+What is the difference between synchronized method and synchronized block?
+What are the two ways to perform static synchronization?
+What is deadlock and when it can occur?
+What is interthread-communication or cooperation?

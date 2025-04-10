@@ -1,0 +1,25 @@
+ASSIGNMENT – 7
+Total Marks - 10 [CO4 & CO5]
+ Thread, Synchronizations & Shared Memory
+
+Consider a main process which creates three threads Th1, Th2, and Th3. The main process also creates two random quantities (X, Y), both less than 10. These two values will be placed by the main process in the shared memory (One variant of IPC Primitive)  that is accessible by all the three threads Th1, Th2 and Th3. The shared memory will be created by the main process also.  
+
+For each pair of values (X,Y), it is required that some computations will be done by various threads. The thread Th1 will compute A (X*Y) and the thread Th2 will compute B (X*Y)/2). Similarly,  Th3 computes C (X+Y), Th2 again computes D ((X*Y)/(X+Y)), and finally Th1 computes E ((X+Y)(X-Y)). All these values are kept in the shared memory in a tabular fashion as shown below. 
+
+The number of (X,Y) pairs will be taken as an argument from the CLI. It is the responsibility of the main process to populate required numbers of (X,Y)s in the shared memory. The program will only exit when all A,B,C etc. are computed for all given (X,Y) values. Before exiting, all (X,Y)s, As, Bs etc. should be displayed. 
+
+Whenever, the threads complete one phase of computations (A, B, C, D and E), they will go for another pair of (X,Y) values; but they will start all together. This can be achieved by proper synchronization.
+
+Use the proper shell command to display the Shared Memory Status/Info/Statistics and attach this sample output as a comment.
+
+   Example:— 
+
+    Input: N, number of random pairs
+   Output Format:
+
+   Pairs(X,Y)	|	A	|	B	|	C	|	D	|	E
+      ————————————————————————————————————————————————————
+        (1, 2) 	|	2	|	1	|	3	|	.66	|	-3
+      ————————————————————————————————————————————————————
+        (4, 1)  |	4	|	2	|	5	|	.8	|	15
+    ………

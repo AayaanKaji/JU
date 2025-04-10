@@ -1,0 +1,415 @@
+-- Student 1, Enrollment 1-01-0001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('1-01-0001', 95, 'S');
+
+-- Student 1, Enrollment 1-01-0101
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('1-01-0101', 88, 'A');
+
+-- Student 1, Enrollment 1-01-0102
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('1-01-0102', 78, 'B');
+
+-- Student 1, Enrollment 1-01-0104
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('1-01-0104', 92, 'S');
+
+-- Student 1, Enrollment 1-01-0106
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('1-01-0106', 70, 'B');
+
+
+
+
+-- Student 2, Enrollment 2-02-0001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('2-02-0001', 90, 'S');
+
+-- Student 2, Enrollment 2-02-0201
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('2-02-0201', 82, 'A');
+
+-- Student 2, Enrollment 2-02-0202
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('2-02-0202', 75, 'B');
+
+-- Student 2, Enrollment 2-02-0203
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('2-02-0203', 88, 'A');
+
+-- Student 2, Enrollment 2-02-0204
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('2-02-0204', 77, 'B');
+
+
+
+-- Student 3, Enrollment 3-03-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('3-03-0002', 92, 'S');
+
+-- Student 3, Enrollment 3-03-0301
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('3-03-0301', 92, 'S');
+
+-- Student 3, Enrollment 3-03-0302
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('3-03-0302', 85, 'A');
+
+-- Student 3, Enrollment 3-03-0303
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('3-03-0303', 78, 'B');
+
+-- Student 3, Enrollment 3-03-0304
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('3-03-0304', 69, 'C');
+
+-- Student 3, Enrollment 3-03-0305
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('3-03-0305', 60, 'C');
+
+
+
+
+-- Student 4, Enrollment 4-04-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('4-04-0002', 88, 'A');
+
+-- Student 4, Enrollment 4-04-0401
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('4-04-0401', 88, 'A');
+
+-- Student 4, Enrollment 4-04-0402
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('4-04-0402', 79, 'B');
+
+-- Student 4, Enrollment 4-04-0403
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('4-04-0403', 71, 'B');
+
+-- Student 4, Enrollment 4-04-0404
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('4-04-0404', 63, 'C');
+
+-- Student 4, Enrollment 4-04-0405
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('4-04-0405', 55, 'D');
+
+
+
+
+-- Student 5, Enrollment 5-05-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('5-05-0002', 78, 'B');
+
+-- Student 5, Enrollment 5-05-0501
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('5-05-0501', 92, 'S');
+
+-- Student 5, Enrollment 5-05-0502
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('5-05-0502', 87, 'A');
+
+-- Student 5, Enrollment 5-05-0503
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('5-05-0503', 78, 'B');
+
+-- Student 5, Enrollment 5-05-0504
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('5-05-0504', 68, 'C');
+
+-- Student 5, Enrollment 5-05-0505
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('5-05-0505', 52, 'D');
+
+
+
+
+-- Student 6, Enrollment 6-06-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('6-06-0002', 88, 'A');
+
+-- Student 6, Enrollment 6-06-0601
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('6-06-0601', 85, 'A');
+
+-- Student 6, Enrollment 6-06-0602
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('6-06-0602', 76, 'B');
+
+-- Student 6, Enrollment 6-06-0603
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('6-06-0603', 88, 'A');
+
+-- Student 6, Enrollment 6-06-0604
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('6-06-0604', 92, 'S');
+
+-- Student 6, Enrollment 6-06-1001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('6-06-1001', 68, 'C');
+
+
+
+
+-- Student 7, Enrollment 7-07-0003
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('7-07-0003', 90, 'S');
+
+-- Student 7, Enrollment 7-07-0701
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('7-07-0701', 75, 'B');
+
+-- Student 7, Enrollment 7-07-0702
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('7-07-0702', 82, 'A');
+
+-- Student 7, Enrollment 7-07-0704
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('7-07-0704', 68, 'C');
+
+-- Student 7, Enrollment 7-07-0705
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('7-07-0705', 45, 'E');
+
+-- Student 7, Enrollment 7-07-0706
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('7-07-0706', 60, 'C');
+
+
+
+-- Student 8, Enrollment 8-08-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('8-08-0002', 88, 'A');
+
+-- Student 8, Enrollment 8-08-0801
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('8-08-0801', 88, 'A');
+
+-- Student 8, Enrollment 8-08-0802
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('8-08-0802', 78, 'B');
+
+-- Student 8, Enrollment 8-08-0803
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('8-08-0803', 92, 'S');
+
+-- Student 8, Enrollment 8-08-0804
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('8-08-0804', 70, 'B');
+
+-- Student 8, Enrollment 8-08-0805
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('8-08-0805', 55, 'D');
+
+
+
+
+-- Student 9, Enrollment 9-02-0001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('9-02-0001', 92, 'S');
+
+-- Student 9, Enrollment 9-02-0201
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('9-02-0201', 88, 'A');
+
+-- Student 9, Enrollment 9-02-0202
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('9-02-0202', 76, 'B');
+
+-- Student 9, Enrollment 9-02-0204
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('9-02-0204', 68, 'C');
+
+-- Student 9, Enrollment 9-02-0205
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('9-02-0205', 45, 'E');
+
+-- Student 9, Enrollment 9-02-0106
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('9-02-0106', 60, 'C');
+
+
+
+
+-- Student 10, Enrollment 10-10-0003
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('10-10-0003', 78, 'B');
+
+-- Student 10, Enrollment 10-10-1001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('10-10-1001', 88, 'A');
+
+-- Student 10, Enrollment 10-10-1002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('10-10-1002', 70, 'B');
+
+-- Student 10, Enrollment 10-10-1003
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('10-10-1003', 95, 'S');
+
+-- Student 10, Enrollment 10-10-1004
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('10-10-1004', 68, 'C');
+
+-- Student 10, Enrollment 10-10-1005
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('10-10-1005', 60, 'C');
+
+
+
+
+-- Student 11, Enrollment 11-11-0003
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('11-11-0003', 88, 'A');
+
+-- Student 11, Enrollment 11-11-1101
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('11-11-1101', 76, 'B');
+
+-- Student 11, Enrollment 11-11-1102
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('11-11-1102', 92, 'S');
+
+-- Student 11, Enrollment 11-11-1103
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('11-11-1103', 70, 'B');
+
+-- Student 11, Enrollment 11-11-1104
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('11-11-1104', 45, 'E');
+
+-- Student 11, Enrollment 11-11-1105
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('11-11-1105', 60, 'C');
+
+
+
+
+
+
+-- Student 12, Enrollment 12-01-0001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('12-01-0001', 78, 'B');
+
+-- Student 12, Enrollment 12-01-0101
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('12-01-0101', 88, 'A');
+
+-- Student 12, Enrollment 12-01-0102
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('12-01-0102', 60, 'C');
+
+-- Student 12, Enrollment 12-01-0103
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('12-01-0103', 78, 'B');
+
+-- Student 12, Enrollment 12-01-0104
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('12-01-0104', 88, 'A');
+
+-- Student 12, Enrollment 12-01-0106
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('12-01-0106', 70, 'B');
+
+
+
+
+-- Student 13, Enrollment 13-01-0001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('13-01-0001', 92, 'S');
+
+-- Student 13, Enrollment 13-01-0101
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('13-01-0101', 76, 'B');
+
+-- Student 13, Enrollment 13-01-0102
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('13-01-0102', 88, 'A');
+
+-- Student 13, Enrollment 13-01-0104
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('13-01-0104', 68, 'C');
+
+-- Student 13, Enrollment 13-01-0105
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('13-01-0105', 45, 'E');
+
+
+
+
+
+
+
+-- Student 14, Enrollment 14-02-0001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('14-02-0001', 88, 'A');
+
+-- Student 14, Enrollment 14-02-0201
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('14-02-0201', 88, 'A');
+
+-- Student 14, Enrollment 14-02-0202
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('14-02-0202', 68, 'C');
+
+-- Student 14, Enrollment 14-02-0203
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('14-02-0203', 92, 'S');
+
+-- Student 14, Enrollment 14-02-0204
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('14-02-0204', 68, 'C');
+
+-- Student 14, Enrollment 14-02-0205
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('14-02-0205', 51, 'D');
+
+
+
+
+
+
+-- Student 15, Enrollment 15-03-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('15-03-0002', 92, 'S');
+
+-- Student 15, Enrollment 15-03-0301
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('15-03-0301', 85, 'A');
+
+-- Student 15, Enrollment 15-03-0302
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('15-03-0302', 75, 'B');
+
+-- Student 15, Enrollment 15-03-0303
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('15-03-0303', 48, 'E');
+
+-- Student 15, Enrollment 15-03-0304
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('15-03-0304', 68, 'C');
+
+
+
+
+
+
+
+-- Student 16, Enrollment 16-04-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('16-04-0002', 75, 'B');
+
+-- Student 16, Enrollment 16-04-0401
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('16-04-0401', 75, 'B');
+
+-- Student 16, Enrollment 16-04-0402
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('16-04-0402', 82, 'B');
+
+-- Student 16, Enrollment 16-04-0403
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('16-04-0403', 72, 'B');
+
+-- Student 16, Enrollment 16-04-0404
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('16-04-0404', 94, 'S');
+
+-- Student 16, Enrollment 16-04-0405
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('16-04-0405', 58, 'D');
+
+
+
+
+
+
+-- Student 17, Enrollment 17-05-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('17-05-0002', 65, 'C');
+
+-- Student 17, Enrollment 17-05-0501
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('17-05-0501', 88, 'A');
+
+-- Student 17, Enrollment 17-05-0502
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('17-05-0502', 70, 'B');
+
+-- Student 17, Enrollment 17-05-0503
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('17-05-0503', 95, 'S');
+
+-- Student 17, Enrollment 17-05-0504
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('17-05-0504', 45, 'E');
+
+
+
+
+
+-- Student 18, Enrollment 18-06-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('18-06-0002', 68, 'C');
+
+-- Student 18, Enrollment 18-06-0601
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('18-06-0601', 92, 'S');
+
+-- Student 18, Enrollment 18-06-0602
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('18-06-0602', 78, 'B');
+
+-- Student 18, Enrollment 18-06-0603
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('18-06-0603', 65, 'C');
+
+-- Student 18, Enrollment 18-06-0605
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('18-06-0605', 88, 'A');
+
+-- Student 18, Enrollment 18-06-1001
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('18-06-1001', 66, 'C');
+
+
+
+
+
+
+
+-- Student 19, Enrollment 19-07-0003
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('19-07-0003', 78, 'B');
+
+-- Student 19, Enrollment 19-07-0701
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('19-07-0701', 95, 'S');
+
+-- Student 19, Enrollment 19-07-0702
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('19-07-0702', 62, 'C');
+
+-- Student 19, Enrollment 19-07-0703
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('19-07-0703', 45, 'E');
+
+-- Student 19, Enrollment 19-07-0706
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('19-07-0706', 88, 'A');
+
+
+
+
+
+
+-- Student 20, Enrollment 20-08-0002
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('20-08-0002', 92, 'S');
+
+-- Student 20, Enrollment 20-08-0801
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('20-08-0801', 68, 'C');
+
+-- Student 20, Enrollment 20-08-0802
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('20-08-0802', 65, 'C');
+
+-- Student 20, Enrollment 20-08-0803
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('20-08-0803', 88, 'A');
+
+-- Student 20, Enrollment 20-08-0804
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('20-08-0804', 70, 'B');
+
+-- Student 20, Enrollment 20-08-0805
+INSERT INTO grade_card (enrollment_code, score, grade) VALUES ('20-08-0805', 95, 'S');
+

@@ -1,0 +1,22 @@
+
+Certainly, I'll briefly explain the logic behind each of the sorting algorithms implemented in the program:
+
+1. **Insertion Sort:**
+   - **Logic:** It builds the sorted array one element at a time by shifting the larger elements to the right. It starts with the second element and compares it with the first, inserting it in the correct position within the sorted part of the array.
+
+2. **Selection Sort:**
+   - **Logic:** It repeatedly selects the minimum element from the unsorted part of the array and places it at the beginning. It maintains two subarrays - the sorted part and the unsorted part.
+
+3. **Bubble Sort:**
+   - **Logic:** It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, indicating that the list is sorted.
+
+4. **Quick Sort:**
+   - **Logic:** It is a divide-and-conquer algorithm. It selects a 'pivot' element from the array and partitions the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. It then recursively sorts the sub-arrays.
+
+5. **Merge Sort:**
+   - **Logic:** It is also a divide-and-conquer algorithm. It divides the unsorted list into n sub-lists, each containing one element, and then repeatedly merges sub-lists to produce new sorted sub-lists until there is only one sub-list remaining, which is the sorted list.
+
+6. **Heap Sort:**
+   - **Logic:** It builds a binary heap from the array and repeatedly removes the maximum element (in a max heap) or minimum element (in a min heap), replacing it with the last element of the heap and adjusting the heap to maintain the heap property. It's an in-place sorting algorithm.
+
+Each sorting algorithm has its own approach and time complexity characteristics, making them suitable for different scenarios and data sizes. The program you have allows you to choose the sorting algorithm and observe its step-by-step sorting process for a given set of integers.

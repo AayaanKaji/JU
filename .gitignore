@@ -1,0 +1,15 @@
+# Python
+*.pyc
+__pycache__/
+
+# Compiled executables
+*.exe
+*.out
+*.OUT
+*.class
+
+# IDE specific files
+.vscode/
+
+# Build folder
+build/

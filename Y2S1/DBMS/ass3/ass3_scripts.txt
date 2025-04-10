@@ -1,0 +1,82 @@
+-- courses
+CREATE TABLE courses  
+( 
+    cid INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    ccode VARCHAR2(2) NOT NULL UNIQUE,
+    cname VARCHAR2(50) NOT NULL UNIQUE, 
+    intake_capacity INT NOT NULL
+);
+
+-- subjects
+CREATE TABLE subjects 
+( 
+    sid INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    scode VARCHAR2(4) NOT NULL UNIQUE,
+    sname VARCHAR2(50) NOT NULL UNIQUE,
+    credit INT NOT NULL
+);
+
+-- course_subject
+CREATE TABLE course_subject 
+( 
+    course_code VARCHAR2(2) NOT NULL, 
+    subject_code VARCHAR2(4) NOT NULL,
+    PRIMARY KEY (course_code, subject_code),
+    FOREIGN KEY (course_code) REFERENCES courses (ccode) ON DELETE CASCADE,
+    FOREIGN KEY (subject_code) REFERENCES subjects (scode) ON DELETE CASCADE
+);
+
+-- students
+CREATE TABLE students
+(
+    student_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR2(100) NOT NULL,
+    dob DATE,
+    phone_number VARCHAR2(10) NOT NULL CHECK (LENGTH(phone_number) = 10),
+    locality VARCHAR2(150),
+    city VARCHAR2(30),
+    PIN VARCHAR2(10),
+    state VARCHAR2(30),
+    country VARCHAR2(30),
+    address VARCHAR2(270) GENERATED ALWAYS AS (
+    	locality || ', ' || city || ', ' || state || ', PIN - ' || PIN || ', ' || country
+    )
+);
+
+-- Grade_Scale
+CREATE TABLE grade_scale
+(
+    grade_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    grade VARCHAR2(2) NOT NULL UNIQUE,
+    low_range INT NOT NULL CHECK (low_range >= 0),
+    high_range INT NOT NULL CHECK (high_range <= 100),
+    CONSTRAINT check_ranges CHECK (low_range <= high_range)
+);
+
+-- Enrollment
+CREATE TABLE enrollment
+(
+    eid INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    student_id INT NOT NULL,
+    course_code VARCHAR2(2) NOT NULL,
+    subject_code VARCHAR2(4) NOT NULL,
+    ecode VARCHAR2(48) GENERATED ALWAYS AS (
+        student_id || '-' || course_code || '-' || subject_code
+    ) UNIQUE,
+    FOREIGN KEY (student_id) REFERENCES students(student_id) ON DELETE CASCADE,
+    FOREIGN KEY (course_code, subject_code) REFERENCES course_subject(course_code, subject_code) ON DELETE CASCADE
+);
+
+-- grade_card
+CREATE TABLE grade_card
+(
+    enrollment_code VARCHAR2(48) PRIMARY KEY,
+    score INT CHECK (score >= 0 AND score <= 100),
+    grade VARCHAR2(1),
+    FOREIGN KEY (enrollment_code) REFERENCES enrollment(ecode),
+    FOREIGN KEY (grade) REFERENCES grade_scale(grade)
+);
+
+
+
+

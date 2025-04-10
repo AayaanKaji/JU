@@ -1,0 +1,24 @@
+ASSIGNMENT – 6-A1
+Total Marks – 10 [CO2]
+Observing the OS through the /proc file system
+
+
+
+
+
+The OS is a program that uses various data structures. Like all programs in execution, you can determine the performance and other behaviour of the OS by inspecting its state - the values stored in its data structures. In this part of the assignment, we study some aspects of the organization and behaviour of a Linux system by observing values of kernel data structures exposed through the /proc virtual file system.
+
+
+The /proc virtual file system:
+
+Linux uses the /proc file system to collect information from kernel data structures. The /proc implementation provided with Linux can read many different kernel data structures. If you cd to /proc on a Linux machine, you will see a number of files and directories at that location. Files in this directory subtree each correspond to some kernel data structure. The subdirectories with numeric names contain virtual files with information about the process whose process ID is the same as the directory name. Files in /proc can be read like ordinary ASCII files. You can open each file and read it using library routines such as fgets() or fscanf(). The proc (5) manual page explains the virtual files and their content available through the /proc file system.
+
+
+Requirements in detail:
+
+You are supposed to write a C program which should print the following values on terminal
+
+Processor Informations (Vendor ID, Model Name and Cache Size in MB)
+Kernel Name, Kernel Release and Operating System Name.
+The amount of memory configured into this computer and Free Memory
+Amount of time since the system was last booted (In Hours, Minutes, Seconds)
