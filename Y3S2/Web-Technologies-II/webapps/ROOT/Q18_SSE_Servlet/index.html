@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Prices</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      #stockPrices {
+        margin-top: 20px;
+      }
+      .stock {
+        margin-bottom: 10px;
+      }
+    </style>
+    <script src="/Q18_SSE_Servlet/script.js" async defer></script>
+  </head>
+  <body>
+    <h1>Live Stock Prices</h1>
+    <div id="stockPrices">
+      <p id="stock">GOOG: <span id="GOOG">$300.00</span></p>
+      <p id="stock">IBM: <span id="IBM">$500.00</span></p>
+    </div>
+
+    <script>
+      // Create an EventSource connection to the SSE endpoint
+      const eventSource = new EventSource("/Q18_SSE_Servlet/stock_price");
+
+      eventSource.onmessage = (event) => {
+        // Parse the incoming JSON data
+        const data = JSON.parse(event.data);
+
+        Object.keys(data).forEach((stock) => {
+          const price = data[stock];
+          document.getElementById(stock).innerText = `$${price}`;
+
+          stockPricesContainer.appendChild(stockDiv);
+        });
+      };
+
+      eventSource.onerror = (event) => {
+        console.error("Event Object:", event);
+        console.error("Event Type:", event.type);
+        console.error("Error Data:", event.data);
+        eventSource.close();
+      };
+    </script>
+  </body>
+</html>

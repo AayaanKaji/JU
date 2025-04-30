@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+    <question>
+        <text>What is the default port number for Tomcat?</text>
+        <optionA>80</optionA>
+        <optionB>443</optionB>
+        <optionC>8080</optionC>
+        <optionD>8005</optionD>
+        <answer>C</answer>
+    </question>
+
+    <question>
+        <text>Which file is used to configure Tomcat users and roles?</text>
+        <optionA>server.xml</optionA>
+        <optionB>web.xml</optionB>
+        <optionC>context.xml</optionC>
+        <optionD>tomcat-users.xml</optionD>
+        <answer>D</answer>
+    </question>
+
+    <question>
+        <text>What servlet container is used by Tomcat?</text>
+        <optionA>Jetty</optionA>
+        <optionB>Catalina</optionB>
+        <optionC>Undertow</optionC>
+        <optionD>GlassFish</optionD>
+        <answer>B</answer>
+    </question>
+</questions>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Creation</title>
+    <link rel="stylesheet" href="/Q22_Create_Account/style.css" />
+    <script src="/Q22_Create_Account/script.js" async defer></script>
+  </head>
+  <body>
+    <form id="signup" onsubmit="submitForm(event)">
+      <div class="container">
+        <h2 id="formTitle">Create an Account</h2>
+
+        <label class="required" for="loginName">Login Name:</label>
+        <input
+          type="text"
+          id="loginName"
+          name="loginName"
+          onkeyup="checkLoginNameAvailability(); validateForm();"
+          required
+        />
+        <span id="loginNameAvailability"></span><br />
+        <span id="loginNameStatus"></span><br />
+
+        <label class="required" for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          onkeyup="validateForm()"
+          required
+        />
+        <span id="passwordStatus"></span><br />
+
+        <label class="required" for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          onkeyup="validateForm()"
+          required
+        />
+        <span id="passwordConformationCheck"></span><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" onkeyup="validateForm()" />
+        <span id="emailStatus"></span><br />
+
+        <div class="name-container">
+          <div class="name-field">
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="first_name"
+              onkeyup="validateForm()"
+            />
+          </div>
+          <div class="name-field">
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="last_name"
+              onkeyup="validateForm()"
+            />
+          </div>
+        </div>
+        <span id="firstNameStatus"></span><br />
+        <span id="lastNameStatus"></span><br />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" onkeyup="validateForm()" />
+        <span id="phoneStatus"></span><br />
+
+        <button type="submit" id="submitBtn">Create Account</button>
+        <span class="signin"
+          >Already have an account?
+          <a href="/Q24_Login_Account/">Sign In</a></span
+        >
+      </div>
+    </form>
+  </body>
+</html>

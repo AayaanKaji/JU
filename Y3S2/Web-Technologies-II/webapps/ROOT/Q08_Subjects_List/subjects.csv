@@ -1,0 +1,41 @@
+Year,Semester,Subject
+1,1,Mathematics-I
+1,1,Physics
+1,1,Programming in C
+1,1,Digital Logic
+1,1,Communication Skills
+1,2,Mathematics-II
+1,2,Data Structures
+1,2,Object-Oriented Programming
+1,2,Computer Organization
+1,2,Environmental Science
+2,1,Discrete Mathematics
+2,1,Algorithms
+2,1,Operating Systems
+2,1,Database Management Systems
+2,1,Computer Networks
+2,2,Software Engineering
+2,2,Web Technologies
+2,2,Artificial Intelligence
+2,2,Probability & Statistics
+2,2,Microprocessors
+3,1,Machine Learning
+3,1,Compiler Design
+3,1,Mobile Computing
+3,1,Cyber Security
+3,1,Elective-I
+3,2,Cloud Computing
+3,2,Internet of Things
+3,2,Data Mining
+3,2,Human-Computer Interaction
+3,2,Elective-II
+4,1,Big Data Analytics
+4,1,Distributed Systems
+4,1,Blockchain Technology
+4,1,Elective-III
+4,1,Project Phase-I
+4,2,Deep Learning
+4,2,Ethical Hacking
+4,2,Elective-IV
+4,2,Project Phase-II
+4,2,Seminar

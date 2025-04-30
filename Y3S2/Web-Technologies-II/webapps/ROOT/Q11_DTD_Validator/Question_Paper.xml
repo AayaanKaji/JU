@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE question-paper SYSTEM "Question_Paper_Format.dtd">
+<question-paper>
+    <question no="Q01">
+        <text>What is the primary purpose of a Java Servlet?</text>
+        <optionA>To create and manage databases</optionA>
+        <optionB>To handle client requests and generate dynamic web content</optionB>
+        <optionC>To design graphical user interfaces (GUI)</optionC>
+        <optionD>To serve as a replacement for JavaScript</optionD>
+        <answer value="optionB">optionB</answer>
+    </question>
+
+    <question no="Q02">
+        <text>Which method in a Servlet is called only once during its lifecycle?</text>
+        <optionA>doGet()</optionA>
+        <optionB>doPost()</optionB>
+        <optionC>init()</optionC>
+        <optionD>service()</optionD>
+        <answer value="optionC">optionC</answer>
+    </question>
+
+    <question no="Q03">
+        <text>Where is the deployment descriptor (web.xml) file located in a Java web application?</text>
+        <optionA>/src directory</optionA>
+        <optionB>/WEB-INF directory</optionB>
+        <optionC>/META-INF directory</optionC>
+        <optionD>/public directory</optionD>
+        <answer value="optionB">optionB</answer>
+    </question>
+
+    <question no="Q04">
+        <text>How does a Servlet handle multiple client requests concurrently?</text>
+        <optionA>By creating a new instance of the Servlet for each request</optionA>
+        <optionB>By using a single-threaded model</optionB>
+        <optionC>By creating a new thread for each request</optionC>
+        <optionD>By queuing requests until the previous one is completed</optionD>
+        <answer value="optionC">optionC</answer>
+    </question>
+</question-paper>

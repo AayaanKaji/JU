@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Fade out Notification section -->
+    <div id="notification-container"></div>
+
+    <h2>Electronics Store Inventory</h2>
+
+    <div class="btns">
+      <!-- Submit Manual form -->
+      <button class="btn-open-popup" onclick="togglePopup()">
+        Add Custom Device
+      </button>
+
+      <!-- Add a random device to table -->
+      <button class="btn-random-entry" onclick="addRandomDevice()">
+        Add Random Device
+      </button>
+    </div>
+
+    <div class="popup-forms">
+      <!-- Manual form for new device (Device Name, Manufacture List, Component Type List, Price, Quantity) -->
+      <div id="form-add-device">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" type="text" id="name" />
+
+        <label class="form-label" for="manufacturer">Manufacturer</label>
+        <select
+          class="form-input"
+          id="manufacturer"
+          onload="populateManufacturers()"
+          style="text-align: center"
+        >
+          <option value="" selected disabled>--Manufacturer--</option>
+        </select>
+
+        <label class="form-label" for="component">Component</label>
+        <select
+          class="form-input"
+          id="component"
+          onload="populateComponents()"
+          style="text-align: center"
+        >
+          <option value="" selected disabled>--Component--</option>
+        </select>
+
+        <label class="form-label" for="price">Price</label>
+        <input class="form-input" type="number" id="price" />
+
+        <label class="form-label" for="quantity">Quantity</label>
+        <input class="form-input" type="number" id="quantity" />
+
+        <button class="btn-submit" onclick="addDevice(); togglePopup();">
+          Add Device
+        </button>
+        <button class="btn-close-popup" onclick="togglePopup()">Close</button>
+      </div>
+
+      <!-- Form to update price and quantity of an existing device -->
+      <div id="form-update-device">
+        <input class="form-input hidden" type="text" id="hidden-name" />
+        <input class="form-input hidden" type="text" id="hidden-manufacturer" />
+        <input class="form-input hidden" type="text" id="hidden-type" />
+
+        <label class="form-label" for="new-price">Price</label>
+        <input class="form-input" type="number" id="new-price" />
+
+        <label class="form-label" for="new-quantity">Quantity</label>
+        <input class="form-input" type="number" id="new-quantity" />
+
+        <button
+          class="btn-submit"
+          onclick="updateDevice(); toggleUpdateForm();"
+        >
+          Update Device
+        </button>
+        <button class="btn-close-popup" onclick="toggleUpdateForm()">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Device Storage Table -->
+    <table id="electronics-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Manufacturer</th>
+          <th>Component</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

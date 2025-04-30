@@ -1,0 +1,240 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Notification Styles */
+#notification-container {
+  position: fixed;
+  top: 10%;
+  right: 10px;
+  width: 250px;
+  z-index: 5;
+}
+
+.notification {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 10px;
+  }
+}
+
+/* Title Styling */
+h2 {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Button Layout */
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.btn-open-popup,
+.btn-random-entry {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.btn-open-popup:hover,
+.btn-random-entry:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
+}
+
+/* Popup Form */
+.popup-forms {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add Device Form Styling */
+#form-add-device {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 350px;
+  height: 500px;
+  margin-top: 10%;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: scale(0.8);
+  animation: fadeInUp 0.5s ease-out forwards;
+  display: none; /* Hidden by default */
+}
+
+/* Show Add Device Form */
+#form-add-device.show {
+  display: block;
+  opacity: 1;
+}
+
+#form-update-device {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 350px;
+  height: 250px;
+  margin-top: 20%;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: scale(0.8);
+  animation: fadeInUp 0.5s ease-out forwards;
+  display: none; /* Hidden by default */
+}
+
+/* Show Add Device Form */
+#form-update-device.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Keyframe for the Popup Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Elements */
+.form-label {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select.form-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Submit and Close Buttons */
+.btn-submit,
+.btn-close-popup {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  font-size: 16px;
+}
+
+.btn-submit {
+  background-color: green;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.btn-close-popup {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn-submit:hover {
+  background-color: #4caf50;
+}
+
+.btn-close-popup:hover {
+  background-color: #c0392b;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+th {
+  background-color: #e2e2e2;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Styling for entries */
+tr:nth-child(even) {
+  background-color: rgb(241, 241, 241);
+}
+
+/* Make Table Responsive */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  .form-add-device {
+    width: 90%;
+  }
+}

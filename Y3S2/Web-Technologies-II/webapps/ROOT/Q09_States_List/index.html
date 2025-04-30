@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States</title>
+    <style>
+        .container { max-width: 400px; margin: 50px auto; }
+        select, p { width: 100%; padding: 8px; margin-top: 10px; margin-bottom: 20px; }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <label for="states">Select State:</label>
+        <select id="states" onchange="populateDistricts()">
+            <option value="" selected disabled>--Select State--</option>
+        </select>
+
+        <label for="districts">Select District:</label>
+        <select id="districts" onchange="showDistrictInfo()">
+            <option value="" selected disabled>--Select District--</option>
+        </select>
+
+        <p id="district-info"></p>
+    </div>
+</body>
+</html>
