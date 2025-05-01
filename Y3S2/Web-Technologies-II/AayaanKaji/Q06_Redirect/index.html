@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirect</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        Under construction. Redirecting in
+        <span id="countdown">10</span> seconds
+      </h1>
+    </header>
+
+    <footer>
+      <p>&copy; 2025 My Webpage</p>
+    </footer>
+
+    <script>
+      function redirect() {
+        const countdownElement = document.getElementById("countdown");
+        const idleDurationSecs = 10;
+        const redirectUrl = "/AayaanKaji";
+        let countdown = idleDurationSecs;
+        let countdownInterval;
+
+        const resetIdleTimeout = function () {
+          if (countdownInterval)
+            clearInterval(countdownInterval);
+          
+          countdown = idleDurationSecs;
+          countdownElement.textContent = countdown;
+
+          countdownInterval = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            if (countdown <= 0) {
+              clearInterval(countdownInterval);
+              location.href = redirectUrl;
+            }
+          }, 1000); // Update countdown every second
+        };
+
+        resetIdleTimeout();
+
+        // Reset the idle timeout on user interaction
+        ["click", "touchstart", "mousemove"].forEach((evt) =>
+          document.addEventListener(evt, resetIdleTimeout, false)
+        );
+      }
+
+      redirect();
+    </script>
+  </body>
+</html>
