@@ -1,130 +1,143 @@
-# Bellman-Ford Algorithm
-
-## Definition
-
-The **Bellman-Ford algorithm** computes the shortest paths from a single source vertex to all other vertices in a weighted graph.  
-**Unlike Dijkstra's algorithm**, Bellman-Ford allows for **negative edge weights**.
-
-**Key idea**:
-- Relax all edges repeatedly to gradually decrease estimated path lengths,
-- Detect negative weight cycles if distances can still be reduced after |V| - 1 iterations.
+## 🛣️ Bellman-Ford Algorithm
 
 ---
 
-# Problem Setting
+### 📘 Definition
+
+The **Bellman-Ford algorithm** computes shortest paths from a **single source** vertex to all other vertices in a **weighted directed graph**, **allowing negative edge weights**.
+
+Unlike Dijkstra's algorithm, it can **detect negative-weight cycles**.
+
+---
+
+### 💡 Key Idea
+
+* Repeatedly **relax all edges** to improve path estimates.
+* After $|V| - 1$ iterations, all shortest paths (with at most $|V| - 1$ edges) are found.
+* A further improvement indicates a **negative-weight cycle**.
+
+---
+
+### 🎯 Problem Statement
 
 Given:
-- A directed graph `G = (V, E)`,
-- A weight function `w: E → R` (weights can be negative),
-- A source vertex `s ∈ V`.
 
-Goal:
-- Compute shortest-path distances `d(s, v)` for every `v ∈ V`,
-- Detect if a **negative-weight cycle** is reachable from the source.
+* Directed graph $G = (V, E)$
+* Weight function $w: E \rightarrow \mathbb{R}$
+* Source vertex $s \in V$
+
+Compute:
+
+* Shortest-path distances $d(s, v)$ for all $v \in V$
+* Detect if any **negative-weight cycle** is reachable from $s$
 
 ---
 
-# Pseudocode for Bellman-Ford
+### 🧾 Pseudocode
 
-```
+```pseudo
 Bellman-Ford(Graph G, Vertex s):
-    // Distance to all vertices is set to `∞`, except the source which is `0`
     for each vertex v in G.V:
         v.dist ← ∞
         v.prev ← null
-        s.dist ← 0
+    s.dist ← 0
 
-  // Relax all edges |V| - 1 times
-  for i from 1 to |V| - 1:
-      for each edge (u, v) in G.E:
-        // If current path to v can be improved do so
-          if u.dist + w(u, v) < v.dist:
-              v.dist ← u.dist + w(u, v)
-              v.prev ← u
+    for i from 1 to |V| - 1:
+        for each edge (u, v) in G.E:
+            if u.dist + w(u, v) < v.dist:
+                v.dist ← u.dist + w(u, v)
+                v.prev ← u
 
-  // Check for negative-weight cycles
-  for each edge (u, v) in G.E:
-      if u.dist + w(u, v) < v.dist:
-          report "Graph contains a negative-weight cycle"
-          return False
+    for each edge (u, v) in G.E:
+        if u.dist + w(u, v) < v.dist:
+            report "Negative-weight cycle detected"
+            return False
 
-  return True
+    return True
 ```
 
+---
+
+### 🔍 Explanation
+
+* **Initialization**:
+
+  * Set all vertex distances to ∞ except the source.
+* **Relaxation**:
+
+  * Repeat $|V| - 1$ times:
+    For each edge $(u, v)$, update $v.dist$ if a better path is found via $u$.
+* **Cycle Detection**:
+
+  * If any edge can be relaxed after $|V| - 1$ passes, a **negative-weight cycle** exists.
 
 ---
 
-# Explanation
+### 🧠 Key Concepts
 
-- **Initialization**: Distance to all vertices is set to `∞`, except the source which is `0`.
-- **Relaxation**:
-  - For `|V| - 1` iterations, relax each edge:  
-    If the current path to `v` can be improved via `u`, update `v.dist`.
-- **Cycle Detection**:
-  - After relaxation, check all edges.
-  - If any edge can still be relaxed, a **negative-weight cycle** exists.
+* **Distance array**: Tracks shortest path estimates.
+* **Predecessor array**: Enables shortest path reconstruction.
+* **Relaxation**: Core operation to improve estimates.
+* **Cycle check**: Final pass detects negative cycles.
 
 ---
 
-# Key Components
+### ⏱️ Time Complexity
 
-- **Distance array**: Stores shortest known distances,
-- **Previous array**: Stores predecessors for path reconstruction,
-- **Relaxation**: Core operation improving path estimates,
-- **Negative cycle detection**: Unique feature compared to Dijkstra's algorithm.
+* Each relaxation pass: $O(|E|)$
+* Number of passes: $|V| - 1$
 
----
+Total:
 
-# Time Complexity
-
-- Relaxing all edges takes `O(|E|)` time,
-- We perform `|V| - 1` passes for relaxation.
-
-Thus, total **time complexity**: O(|V| * |E|)
-
+$$
+O(|V| \cdot |E|)
+$$
 
 ---
 
-# Space Complexity
+### 📦 Space Complexity
 
-- Distance array: `O(|V|)`,
-- Predecessor array: `O(|V|)`,
-- Graph storage (adjacency list or edge list): `O(|V| + |E|)`.
+* Distance and predecessor arrays: $O(|V|)$
+* Graph (edge list or adjacency list): $O(|V| + |E|)$
 
-Thus, **space complexity**: O(|V| + |E|)
+Total:
 
-
----
-
-# Summary Table
-
-| Feature            | Bellman-Ford Algorithm                                      |
-|--------------------|-------------------------------------------------------------|
-| Problem solved     | Single-source shortest paths (handles negative weights)     |
-| Strategy           | Dynamic programming via repeated relaxation                 |
-| Detects cycles     | Yes (detects negative-weight cycles)                         |
-| Time complexity    | O(|V| * |E|)                                                 |
-| Space complexity   | O(|V| + |E|)                                                 |
+$$
+O(|V| + |E|)
+$$
 
 ---
 
-# Properties of Bellman-Ford
+### 📊 Summary Table
 
-- Handles graphs with **negative edge weights**,
-- Detects **negative-weight cycles** reachable from the source,
-- Slower than Dijkstra's algorithm for graphs without negative weights,
-- Used in:
-  - **Routing protocols** (e.g., RIP - Routing Information Protocol),
-  - **Currency arbitrage detection**,
-  - **Graph analysis** where negative cycles matter.
-
----
-
-# Mathematical Justification (Correctness)
-
-- After `i` iterations, shortest paths with at most `i` edges are correctly computed.
-- Since any simple path can have at most `|V| - 1` edges (no cycles), repeating relaxation `|V| - 1` times guarantees shortest paths.
-- A further relaxation implies a **negative-weight cycle** (path length can be decreased indefinitely).
+| Feature          | Bellman-Ford Algorithm                            |   |       |   |     |
+| ---------------- | ------------------------------------------------- | - | ----- | - | --- |
+| Problem Solved   | Single-source shortest path (with negative edges) |   |       |   |     |
+| Graph Type       | Directed, weighted (allows negative weights)      |   |       |   |     |
+| Cycle Detection  | Yes (negative-weight cycles)                      |   |       |   |     |
+| Strategy         | Dynamic programming (edge relaxation)             |   |       |   |     |
+| Time Complexity  | O(V.E) |
+| Space Complexity | O(V + E) |
 
 ---
 
+### 🧩 Properties
+
+* Works with **negative weights**.
+* Detects **negative-weight cycles**.
+* Slower than Dijkstra for graphs with non-negative weights.
+* Used in:
+
+  * **Distance vector routing protocols** (e.g., RIP),
+  * **Arbitrage detection** in finance,
+  * **Graphs where cycles affect correctness**.
+
+---
+
+### 📐 Mathematical Justification
+
+* After $i$ iterations, all shortest paths with at most $i$ edges are computed.
+* Since any acyclic path has at most $|V| - 1$ edges, running the algorithm for $|V| - 1$ rounds suffices.
+* A further improvement means a path can be made indefinitely shorter ⇒ **negative-weight cycle** exists.
+
+---
