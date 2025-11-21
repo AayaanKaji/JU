@@ -1,16 +1,16 @@
 # Course Directory Index
 
-| Subject                               | Directory Link |
-|---------------------------------------|----------------|
-| Assembly                              | [Assembly](Y2S1/Assembly/) |
-| Database Management Systems           | [Database-Management-Systems](Y2S1/Database-Management-Systems/) |
-| Data Structures and Algorithms        | [Data-Structures-and-Algorithms](Y2S1/Data-Structures-and-Algorithms/) |
-| Object-Oriented Programming           | [Object-Oriented-Programming](Y2S1/Object-Oriented-Programming/) |
-| Computer Networks                     | [Computer-Networks](Y2S2/Computer-Networks/) |
-| Object-Oriented System                | [Object-Oriented-System](Y2S2/Object-Oriented-System/) |
-| Software Engineering                  | [SoftwareEngineering](Y2S2/SoftwareEngineering/) |
-| Cloud Computing                       | [Cloud-Computing](Y3S1/Cloud-Computing/) |
-| Operating Systems                     | [Operating-Systems](Y3S1/Operating-Systems/) |
-| Multimedia Coding and Communications  | [Multimedia-Coding-Communications](Y3S2/Multimedia-Coding-and-Communications/) |
-| Web Technologies II                   | [Web-Technologies-II](Y3S2/Web-Technologies-II/) |
-| Machine Learning                      | [Machine-Learning](Y4S1/Machine-Learning/) |
+| Year & Semester       | Subject |
+|-----------------------|---------|
+| Year 2, Semester 1    | [Assembly](Y2S1/Assembly/) |
+| Year 2, Semester 1    | [Database Management Systems](Y2S1/Database-Management-Systems/) |
+| Year 2, Semester 1    | [Data Structures and Algorithms](Y2S1/Data-Structures-and-Algorithms/) |
+| Year 2, Semester 1    | [Object-Oriented Programming](Y2S1/Object-Oriented-Programming/) |
+| Year 2, Semester 2    | [Computer Networks](Y2S2/Computer-Networks/) |
+| Year 2, Semester 2    | [Object-Oriented System](Y2S2/Object-Oriented-System/) |
+| Year 2, Semester 2    | [Software Engineering](Y2S2/SoftwareEngineering/) |
+| Year 3, Semester 1    | [Cloud Computing](Y3S1/Cloud-Computing/) |
+| Year 3, Semester 1    | [Operating Systems](Y3S1/Operating-Systems/) |
+| Year 3, Semester 2    | [Multimedia Coding and Communications](Y3S2/Multimedia-Coding-and-Communications/) |
+| Year 3, Semester 2    | [Web Technologies II](Y3S2/Web-Technologies-II/) |
+| Year 4, Semester 1    | [Machine Learning](Y4S1/Machine-Learning/) |
